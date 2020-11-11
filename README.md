@@ -1,2 +1,3 @@
 # Park_VR_App
- A-Frame Park tour
+
+A virtual tour of the park using A-Frame.  

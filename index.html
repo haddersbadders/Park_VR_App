@@ -34,14 +34,20 @@ function replaceIframeURL(nm, url) {
 
 </header> -->
 <div class="vr-box">
-  <iframe name="vrbox" id="vrbox" src="garden_entrance.html" width="100%" height="100%"></iframe>
+  <iframe name="vrbox" id="vrbox" src="welcome.html" width="100%" height="100%"></iframe>
 </div>
 
 <div class="nav_thumbs container-fluid" id="vrnav">
   <div class="row">
 
-
-      <div class="col"><div class="vr_thumb active">
+    <div class="col"><div class="vr_thumb active">
+      <a href="welcome.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+      <img src="images/thumbs/welcome.png" alt="Welcome screen">
+      <p>Welcome and Instructions</p>
+      </a>
+    </div>
+  </div>
+      <div class="col"><div class="vr_thumb">
         <a href="garden_entrance.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
         <img src="images/thumbs/garden_entrance_thumb.jpg" alt="Garden Entrance">
         <p>The Garden Entrance</p>

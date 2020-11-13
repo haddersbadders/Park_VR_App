@@ -15,12 +15,17 @@
   </head>
   <body>
     <audio id="fallencity" src="media/fallencity.mp3"></audio>
+
+
     <a-scene>
       <a-assets>
    <img id="man-image" src="images/men-4046109_640.jpg">
  </a-assets>
        <a-sky src="images/garden_entrance.jpg" rotation="0 90 0"></a-sky>
-
+       <a-entity
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: blue"
+  text="value: This text will be 4 units wide."></a-entity>
 
 <!-- <a-image position="-13.22274 -0.2614 -26.68763" src="#man-image" material="" geometry="height: 6; width: 6" scale=""></a-image> -->
 

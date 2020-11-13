@@ -8,24 +8,31 @@
       <a-assets>
           <a-asset-item id="dogmodel" src="models/dog.gltf"></a-asset-item>
             <a-asset-item id="arrowmodel" src="models/RLab-arrow.gltf"></a-asset-item>
+            <!-- <a-asset-item id="neonarrowmodel" src="models/arrow.gltf"></a-asset-item> -->
 
         </a-assets>
 
       <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
 
-<a-entity id="dog" rotation="0 66 0" position="-3.79187 0 -5.04515" scale="0.004 0.004 0.004" gltf-model="#dogmodel"></a-entity>
-<a-entity id="arrow1" rotation="-12.230930052657683 -135.77495462774144 -5.948447829048207" position="5.421 1.03801 -2.43265" scale="13.44336 2.18199 1.57659" gltf-model="#arrowmodel"></a-entity>
-<a-entity id="arrow2" rotation="-11.931273125804264 140.64394997076317 -1.3298350424986407" position="4.9313 1.03801 3.34724" scale="13.44336 2.18199 1.57659" gltf-model="#arrowmodel"></a-entity>
+<a-entity id="dog" rotation="0 66 0" position="-5.83667 -0.00351 0.11525" scale="0.004 0.004 0.004" gltf-model="#dogmodel"></a-entity>
+<a-entity id="arrow1" rotation="-12.230930052657683 -135.77495462774144 -5.948447829048207" position="5.9416 1.03801 -1.40482" scale="13.44336 2.18199 1.57659" gltf-model="#arrowmodel"></a-entity>
+<a-entity id="arrow2" rotation="-11.931273125804264 140.64394997076317 -1.3298350424986407" position="3.26812 0.90697 5.96096" scale="13.44336 2.18199 1.57659" gltf-model="#arrowmodel"></a-entity>
+<!-- <a-entity id="arrow3" rotation="-11.931273125804264 140.64394997076317 -1.3298350424986407" position="4.9313 1.03801 3.34724" scale="13.44336 2.18199 1.57659" gltf-model="#neonarrowmodel"></a-entity> -->
 
-      <a-entity id="welcometxt" scale="4 4 4" position="0 2.00407 -5.30489"
-      geometry="primitive: plane; width: 1.25; height: 0.595"
+      <a-entity id="welcometxt" rotation="0 0 0" scale="1 1 1" position="0.67725 1.89008 -10.2097"
+      geometry="primitive: plane; width: 5; height: 3"
       material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
-      text="value: Welcome to the virtual Park Tour!\n ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 1"></a-entity>
+      text="value: Welcome to the virtual Park Tour!\n ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 0; wrapCount: 16"></a-entity>
 
-      <a-entity id="intructionstxt1" rotation="0 -72.35311036912036 0" scale="4 4 4" position="6.8861 2.00407 -1.7828"
+      <a-entity id="intructionstxt1" rotation="0 -90 0" scale="4 4 4" position="7.16048 1.34675 0.18518"
       geometry="primitive: plane; width: 1.25; height: 0.595"
       material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
       text="value: Navigate through the scenes using the thumbnail images below.\n ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 1"></a-entity>
+
+      <a-entity id="intructionstxt2" rotation="0 180 0" scale="4 4 4" position="0.005 2.00407 5.75186"
+      geometry="primitive: plane; width: 1.25; height: 0.595"
+      material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
+      text="value: In each scene you'll find panels with information, so make sure you read these. \n \n Some scenes may have audio and video, so look out for this and make sure you watch and listen! ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 1"></a-entity>
 
 
      </a-scene>
